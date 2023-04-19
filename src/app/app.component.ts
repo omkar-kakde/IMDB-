@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ImovieArray } from './shared/model/movieArray';
+import { movieArr } from './shared/const/moviearr';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'imdbtask';
+ 
+
+  imgBaseurl=`https://image.tmdb.org/t/p/w1280/`
+
+  searchByValue ! : string;
+  movieArray : ImovieArray[] = movieArr;
 }
